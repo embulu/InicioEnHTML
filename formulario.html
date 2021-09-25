@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <center>
+        <h1>Formulario de registro</h1>
+    </center>
+    <!-- formulario -->
+    <form class="my-form">
+        <div class="container">
+            <!-- lista informativa
+            <ul>
+                <li>Opcion 1</li>
+                <li>Opcion 2</li>
+                <li>Opcion 3</li>
+                <li>Opcion 4</li>
+                <li>Opcion 5</li>
+            </ul> -->
+            <!-- para seleccion desde una lista-->
+            <select name="Tipo_doc">
+                <option selected disabled>Seleccione una opción</option>
+                <option value="1-CC">Cedula de ciudadania</option>
+                <option value="2-TI">Tarjeta de identidad</option>
+                <option value="3-CE">Cedula de extrangeria</option>
+                <option value="4-PA">Pasaporte</option>
+            </select>
+        </div><br>
+        <!-- entrada de datos-->
+        <div class="grid grid-2">
+            <input type="text" placeholder="Numero de documento" required>
+        </div><br>
+        <div class="grid grid-2">
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Usuario" required>
+        </div><br>
+        <div class="grid grid-2">
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="(+57)Telefono" required>
+        </div><br>
+        <textarea placeholder="Observaciones"></textarea>
+        <br>
+        <input type="checkbox" name="" id="terms">
+        <label for="terms">Aceptacion de uso de datos</label>
+
+
+    </form>
+</body>
+
+</html>
