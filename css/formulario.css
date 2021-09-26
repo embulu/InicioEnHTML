@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    color: rgb(247, 156, 95);
+}
+input, select, textarea, button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100%;
+}
+button, label{
+    cursor: pointer;
+}
+select{
+    appearance: none;
+}   
+
+select:-moz-focusring{
+    color: transparent !important;
+    text-shadow: 0 0 0 var(--white);
+}
+textarea{
+    resize: none;
+   
+}
+
+@media screen and (min-width: 600px) {
+    .my-form .grid{
+        display: grid;
+        grid-gap: 1.5 rem;
+    }
+    my.form .grid-2{
+        grid-template-columns: 1fr 1fr ;
+    }
+    my.form .grid-3{
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+    .my-form .grid > *:not(:last-child) {
+        margin-bottom: 0;
+      }
+    
+      .my-form .required-msg {
+        display: block;
+      }
+}
+@media screen and (min-width: 541px) {
+    .my-form input[type="checkbox"] + label::before {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .my-form input[type="checkbox"]:checked + label::after {
+      top: 3px;
+    }
+  }

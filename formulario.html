@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css" type="text/css">
+    <script src="js/main.js"></script>
     <title>Registro</title>
 </head>
 
@@ -34,7 +36,7 @@
         </div><br>
         <!-- entrada de datos-->
         <div class="grid grid-2">
-            <input type="text" placeholder="Numero de documento" required>
+            <input type="number" placeholder="Numero de documento" required>
         </div><br>
         <div class="grid grid-2">
             <input type="text" placeholder="Nombre" required>
@@ -44,11 +46,27 @@
             <input type="email" placeholder="Email" required>
             <input type="text" placeholder="(+57)Telefono" required>
         </div><br>
-        <textarea placeholder="Observaciones"></textarea>
+        <textarea placeholder="Observaciones max. 150 palabras"></textarea>
         <br>
         <input type="checkbox" name="" id="terms">
         <label for="terms">Aceptacion de uso de datos</label>
+        <br>
 
+        <div class="grid frid-3"><br>
+            <div class="required-msg">Obligatorio</div>
+            <button class="btn-grid" type="submit" disabled>
+                <span class="black">
+                    <img src="" width="20" height="50" alt="btn enviar">
+                </span>
+                <span class="front">Enviar</span>
+            </button>
+            <button class="btn-grid" type="submit" disabled>
+                <span class="black">
+                    <img src="" width="50" height="50" alt="">
+                </span>
+                <span class="front">Eliminar</span>
+            </button>
+        </div>
 
     </form>
 </body>
